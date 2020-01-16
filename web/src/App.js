@@ -12,6 +12,7 @@ function App() {
 
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
+  
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -53,8 +54,8 @@ function App() {
                 name="github_username" 
                 id="github_username" 
                 required
-                value= {github_username}
-                onChange={e => setGithubUsername}
+                value={github_username} 
+                onChange={e => setGithubUsername(e.target.value)}
               />
             </div>
 
@@ -65,7 +66,7 @@ function App() {
                 id="techs" 
                 required
                 value={techs}
-                onChange={e => setTechs}
+                onChange={e => setTechs(e.target.value)}
               />
             </div>
 
@@ -76,7 +77,8 @@ function App() {
                   type ="number" 
                   name="latitude" 
                   id="latitude" 
-                  required value={latitude} 
+                  required 
+                  value={latitude} 
                   onChange={e => setLatitude(e.target.value)}
                 />
               </div>
@@ -87,7 +89,8 @@ function App() {
                   type="number" 
                   name="longitude" 
                   id="longitude" 
-                  required value={longitude}
+                  required 
+                  value={longitude}
                   onChange={e => setLongitude(e.target.value)}
                 />
               </div>
