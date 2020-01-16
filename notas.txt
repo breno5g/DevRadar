@@ -7,3 +7,7 @@
 //Body: request.body (são dados para a criação ou alteração de um registro)
 
 //MongoDB (Não-relacional)
+
+//Componete: Bloco isolado de html, css e js, o qual não interfere no restante da aplicação
+//Propriedade: Informações que um componente PAI passa para o componente FILHO
+//Estado: Informações mantidads pelo componente (Lembrar; imutabilidade)
